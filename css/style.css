@@ -626,6 +626,7 @@ header {
 \*------------------------------------*/
 
 .about {
+    min-height: 340px;
     position: relative;
     text-align: center;
     padding: 40px 20px;
@@ -787,6 +788,7 @@ header {
 
 .service {
     position: relative;
+    min-height: 240px;
     padding: 40px 20px 40px 70px;
     margin: 15px 0px;
     border: 1px solid #EEE;
