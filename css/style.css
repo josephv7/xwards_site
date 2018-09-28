@@ -42,6 +42,11 @@ Table OF Contents
 \*------------------------------------*/
 
 
+.fixsize{
+    height: 100vh;
+}
+
+
 /* -- typography -- */
 
 body {
