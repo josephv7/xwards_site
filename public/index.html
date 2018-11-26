@@ -9,7 +9,7 @@
 
 	<title>Xwards</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"  />
 	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
 	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
@@ -300,31 +300,31 @@
 		<h2 class="title">Our clients</h2>
 	</div>
 	 <section class="customer-logos slider">
-		<div class="slide"><img src="img2/clients/aster.jpg"></div>
-		<div class="slide"><img src="img2/clients/blackeagle.jpg"></div>
-		<div class="slide"><img src="img2/clients/dailyfish.jpg"></div>
-		<div class="slide"><img src="img2/clients/duroflex.jpg"></div>
-		<div class="slide"><img src="img2/clients/fabindia.jpg"></div>
-		<div class="slide"><img src="img2/clients/fts.jpg"></div>
-		<div class="slide"><img src="img2/clients/honda.jpg"></div>
-		<div class="slide"><img src="img2/clients/jayalakshmi.jpg"></div>
-		<div class="slide"><img src="img2/clients/joboy.jpg"></div>
-		<div class="slide"><img src="img2/clients/kalyan.jpg"></div>
-		<div class="slide"><img src="img2/clients/mod.jpg"></div>
-		<div class="slide"><img src="img2/clients/mojo.jpg"></div>
-		<div class="slide"><img src="img2/clients/mrbutler.jpg"></div>
-		<div class="slide"><img src="img2/clients/nexa.jpg"></div>
-		<div class="slide"><img src="img2/clients/ricenfish.jpg"></div>
-		<div class="slide"><img src="img2/clients/royalenfield.jpg"></div>
-		<div class="slide"><img src="img2/clients/sangeethabags.jpg"></div>
-		<div class="slide"><img src="img2/clients/skyline.jpg"></div>
-		<div class="slide"><img src="img2/clients/stories.jpg"></div>
-		<div class="slide"><img src="img2/clients/subway.jpg"></div>
-		<div class="slide"><img src="img2/clients/swiggy.jpg"></div>
-		<div class="slide"><img src="img2/clients/tata.jpg"></div>
-		<div class="slide"><img src="img2/clients/timekids.jpg"></div>
-		<div class="slide"><img src="img2/clients/vcinemas.jpg"></div>
-		<div class="slide"><img src="img2/clients/yamaha.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/aster.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/blackeagle.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/dailyfish.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/duroflex.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/fabindia.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/fts.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/honda.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/jayalakshmi.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/joboy.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/kalyan.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/mod.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/mojo.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/mrbutler.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/nexa.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/ricenfish.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/royalenfield.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/sangeethabags.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/skyline.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/stories.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/subway.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/swiggy.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/tata.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/timekids.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/vcinemas.jpg"></div>
+		<div class="slide"><img data-lazy="img2/clients/yamaha.jpg"></div>
 
 	 </section>
   </div>
@@ -775,10 +775,11 @@
 	$(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 8,
-        slidesToScroll: 1,
+		slidesToScroll: 1,
+		lazyLoad: 'ondemand',
         autoplay: true,
         autoplaySpeed: 1500,
-        arrows: false,
+		arrows: false,
         dots: false,
         pauseOnHover: false,
         responsive: [{
