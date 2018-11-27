@@ -15,8 +15,8 @@
 	<title>Xwards</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/> 
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+	<!-- <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />TODO -->
+	<!-- <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />TODO -->
 	<!-- <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" /> -->
 	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -462,7 +462,8 @@
 
 				<!-- Testimonial slider -->
 				<div class="col-md-10 col-md-offset-1">
-					<div id="testimonial-slider" class="owl-carousel owl-theme">
+					<!-- <div id="testimonial-slider" class="owl-carousel owl-theme"> -->
+							<div id="testimonial-slider" class="slider">
 							
 						<!-- testimonial -->
 						<div class="testimonial">
@@ -820,6 +821,33 @@ $('.about-images').slick({
 	dots: false
 });
 </script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('#testimonial-slider').slick({
+        slidesToShow: 2,
+		slidesToScroll: 1,
+		lazyLoad: 'ondemand',
+        autoplay: true,
+        autoplaySpeed: 1500,
+		arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});</script>
+
 
 
 <!-- <script type="text/javascript">

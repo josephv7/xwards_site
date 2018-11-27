@@ -90,21 +90,21 @@
 	// Owl Carousel
 
 
-	$('#testimonial-slider').owlCarousel({
-		loop:true,
-		margin:15,
-		dots : true,
-		nav: false,
-		autoplay : true,
-		responsive:{
-			0: {
-				items:1
-			},
-			992:{
-				items:2
-			}
-		}
-	});
+	// $('#testimonial-slider').owlCarousel({
+	// 	loop:true,
+	// 	margin:15,
+	// 	dots : true,
+	// 	nav: false,
+	// 	autoplay : true,
+	// 	responsive:{
+	// 		0: {
+	// 			items:1
+	// 		},
+	// 		992:{
+	// 			items:2
+	// 		}
+	// 	}
+	// });
 
 
 	// TODO commented to resolve owl carousel error
@@ -119,27 +119,27 @@
 	// 	animateOut: 'fadeOut'
 	// });
 
-	$('#about-slider2').owlCarousel({
-		items:1,
-		loop:true,
-		margin:15,
-		nav: true,
-		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-		dots : true,
-		autoplay : true,
-		animateOut: 'fadeOut'
-	});
+	// $('#about-slider2').owlCarousel({
+	// 	items:1,
+	// 	loop:true,
+	// 	margin:15,
+	// 	nav: true,
+	// 	navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+	// 	dots : true,
+	// 	autoplay : true,
+	// 	animateOut: 'fadeOut'
+	// });
 
-	$('#about-slider3').owlCarousel({
-		items:1,
-		loop:true,
-		margin:15,
-		nav: true,
-		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-		dots : true,
-		autoplay : true,
-		animateOut: 'fadeOut'
-	});
+	// $('#about-slider3').owlCarousel({
+	// 	items:1,
+	// 	loop:true,
+	// 	margin:15,
+	// 	nav: true,
+	// 	navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+	// 	dots : true,
+	// 	autoplay : true,
+	// 	animateOut: 'fadeOut'
+	// });
 
 	
 
