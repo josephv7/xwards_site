@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+	<!-- <meta http-equiv="Cache-control" content="public"> -->
 
-	<link rel="manifest" href="/manifest.json">
+
+	<!-- <link rel="manifest" href="manifest.json"> TODO -->
 
 	<title>Xwards</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -144,13 +146,25 @@
 
 				<!-- About slider -->
 				<div class="col-md-6">
-					<div id="about-slider" class="owl-carousel owl-theme">
+					<!-- TODO code for owl carousel removed -->
+					<!-- <div id="about-slider" class="owl-carousel owl-theme">
 						<img class="img-responsive" src="./img2/ab2.jpg" alt="">
 						<img class="img-responsive" src="./img2/model1.jpg" alt="">
 						<img class="img-responsive" src="./img2/ab6.jpg" alt="">
 						<img class="img-responsive" src="./img2/model2.jpg" alt="">
-						<!--<img class="img-responsive" src="./img2/ab4.jpg" alt="">-->
+					</div> -->
+
+					<div id="about-slider">
+					<section class="about-images slider">
+						<div class="slide img-responsive"><img data-lazy="./img2/ab2.jpg"></div>
+						<div class="slide img-responsive "><img data-lazy="./img2/model1.jpg"></div>
+						<div class="slide img-responsive"><img data-lazy="./img2/ab6.jpg"></div>
+						<div class="slide img-responsive"><img data-lazy="./img2/model2.jpg"></div>
+						
+				
+					 </section>
 					</div>
+
 				</div>
 				<!-- /About slider -->
 
@@ -795,9 +809,19 @@
         }]
     });
 });</script>
-
-
 <script type="text/javascript">
+$('.about-images').slick({
+	slidesToShow: 1,
+	autoplay: true,
+    autoplaySpeed: 1500,
+	arrows: false,
+	lazyLoad: 'ondemand',
+	dots: false
+});
+</script>
+
+
+<!-- <script type="text/javascript">
 	if ('serviceWorker' in navigator) {
 	  console.log("Will the service worker register?");
 	  navigator.serviceWorker.register('service-worker.js')
@@ -807,7 +831,7 @@
 		  console.log("No it didn't. This happened: ", err)
 		});
 	}
-  </script>
+  </script> -->
   
 	
 
