@@ -1,0 +1,21 @@
+{
+    "short_name": "Xwards",
+    "name": "Xwards",
+    "icons": [
+      {
+        "src": "/img2/xds.svg",
+        "type": "image/svg",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img2/xds.svg",
+        "type": "img2/xds.svg",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "background_color": "#6195FF",
+    "display": "standalone",
+    "scope": "/maps/",
+    "theme_color": "#6195FF"
+  }
