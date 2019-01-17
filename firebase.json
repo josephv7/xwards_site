@@ -12,7 +12,6 @@
         "destination": "/index.html"
       }
     ],
-    "hosting": {
       "headers": [ {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
         "headers": [ {
@@ -31,8 +30,8 @@
           "key": "Cache-Control",
           "value": "max-age=300"
         } ]
-      } ]
-    }
-    
+      } ],
+      "cleanUrls": true,
+      "trailingSlash" : false
   }
 }
