@@ -867,7 +867,7 @@ header {
 
 .service {
     position: relative;
-    min-height: 240px;
+    min-height: 260px;
     padding: 40px 20px 40px 70px;
     margin: 15px 0px;
     border: 1px solid #EEE;
